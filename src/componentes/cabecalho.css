@@ -1,0 +1,56 @@
+:root {
+  --menu-background-color: #1E425E;
+  --menu-logo-width: 110px;
+  --menu-logo-position: left 40px center;
+  --menu-item-margin: 20px;
+  --menu-link-color: #FFF;
+  --menu-link-hover-color: #FFF;
+  --menu-cliAq-color: #EDFA8B;
+  --menu-link-font-weight: bold;
+}
+
+.menu {
+  background-color: var(--menu-background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-size: var(--menu-logo-width);
+  background-position: var(--menu-logo-position);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: var(--menu-item-margin);
+  margin-left: var(--menu-item-margin);
+}
+
+a {
+  color: var(--menu-link-color);
+  text-decoration: none;
+}
+
+#cliAq {
+  color: var(--menu-cliAq-color);
+  font-weight: var(--menu-link-font-weight);
+}
+
+a:hover {
+  color: var(--menu-link-hover-color);
+}
+
+a:visited {
+  color: var(--menu-link-color);
+}

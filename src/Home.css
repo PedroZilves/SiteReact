@@ -1,0 +1,22 @@
+:root {
+  --background-color: #ADE28A;
+  --font-family: sans-serif, Roboto;
+  --grid-gap: 10px;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  padding: 10px;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: auto auto;
+  grid-gap: var(--grid-gap);
+}
+
+#grid-item {
+  grid-column: 1/3;
+}
