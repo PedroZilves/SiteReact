@@ -4,19 +4,48 @@
   --grid-gap: 10px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Defina variáveis globais, como background-color e font-family, aqui */
+
+/* Defina variáveis globais, como background-color e font-family, aqui */
+
 body {
   background-color: var(--background-color);
   font-family: var(--font-family);
   padding: 10px;
+  margin: 0; /* Remova as margens padrão do corpo da página */
 }
 
 #grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto; /* Adiciona uma nova linha para o rodapé */
   grid-gap: var(--grid-gap);
+  margin: 0; /* Remove as margens do grid */
+  padding: 0; /* Remove o preenchimento do grid */
+  margin: 0;
+  width: 100%;
+  max-width: 100%; /* Faz o grid-container se ajustar ao tamanho da tela */
+}
+/* Se houver bordas nos elementos dentro do grid, remova-as também */
+
+#grid-item1,
+#grid-item2,
+#grid-item3,
+.rodape {
+  border: none; /* Remove as bordas dos elementos dentro do grid */
 }
 
-#grid-item {
-  grid-column: 1/3;
+.rodape {
+  grid-row: 4; /* Coloca o rodapé na quarta linha do grid */
+  grid-column: 1 / -1; /* Estende o rodapé por todas as colunas */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
