@@ -1,6 +1,7 @@
 import './Home.css'
 import Cabecalho from "./componentes/cabecalho"
 import Rodape from './componentes/rodape'
+import ContainerHome from './componentes/componentesPesonalizados/homeContainer'
 
 export default function Home() {
 
@@ -11,10 +12,7 @@ export default function Home() {
         <Cabecalho/>
         </div>
         <div id="grid-item2">
-        dasdasdasdasd
-        </div>
-        <div id="grid-item3">
-          dasdasdasdasdas
+        <ContainerHome/>
         </div>
         <div class="rodape">
           <Rodape/>

@@ -1,6 +1,13 @@
 .rodape {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 20px; /* Aumentei o padding para dar mais espaço */
     text-align: center;
   }
+  
+  .rodape p {
+    font-size: 13px;
+    color: #fff;
+    margin: 5px; /* Adicionei um pequeno espaçamento entre os parágrafos */
+  }
+  
