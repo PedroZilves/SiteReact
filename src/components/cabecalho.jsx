@@ -1,13 +1,15 @@
 import './cabecalho.css'
+import React from 'react';
 import logoImage from '../img/logo.png'
+import { Link } from "react-router-dom";
 
 export default function Cabecalho(){
     return(
     <>
     <div id="menu" class="menu">
     <ul id="itens">
-     <li><a href="#">Menu</a></li>
-     <li><a href="#">Quem somos</a></li>
+     <li><Link to='/'>Home</Link></li>
+     <li><Link to='../routes/QmSomos.jsx'>Quem Somos</Link></li>
      <li><a href="#">Monitoramento de área</a></li>
      <li><a href="#">Projeto</a></li> 
      <li><a href="#">Como o lixo é descartado</a></li>

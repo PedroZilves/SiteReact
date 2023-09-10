@@ -1,7 +1,7 @@
+import Cabecalho from '../components/cabecalho'
 import './Home.css'
-import Cabecalho from "./componentes/cabecalho"
-import Rodape from './componentes/rodape'
-import ContainerHome from './componentes/componentesPesonalizados/homeContainer'
+import ContainerHome from '../components/componentesPesonalizados/homeContainer'
+import Rodape from '../components/rodape'
 
 export default function Home() {
 
