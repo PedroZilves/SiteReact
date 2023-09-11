@@ -1,14 +1,143 @@
-.container {
-	display: flex;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
+.containerGrid {
+	margin-top: 10%;
+	margin-left: 2%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+	gap: 20px; /* Adjust the gap between containers as needed */
+  }
+  
+  .containerQmSomos {
+	grid-column: 1/3;
+	grid-row: 1;
+	width: 60%;
+	height: 85%;
+	position: relative; /* Remove absolute positioning */
 	border-radius: 20px;
 	overflow: hidden;
 	opacity: 0;
 	animation: fadeIn 2s ease-in-out forwards;
-	width: 80%;
-	height: 80%;
-}
+	background-color: #256670;
+	border-radius: 20px;
+  }
+  
+  .containerQmSomos img {
+	display: block;
+	margin: auto;
+	margin-top: -10%;
+	max-width: 100%;
+	max-height: 100%;
+  }
+  
+  .txtPadr {
+	display: inline-block;
+	color: #FFF;
+	font-size: 16px;
+	margin-left: 5%;
+	margin-top:4%;
+  }
+
+  .txtPadr2 {
+	display: inline-block;
+	color: #FFF;
+	font-size: 20px;
+	margin-left: 5%;
+	margin-top: 6%;
+  }
+  
+  .txtPadr3{
+	font-size: 32px;
+	color: #008000;
+	margin-top: 2%;
+	margin-left: 25%;
+  }
+
+   h2 {
+	font-size: 40px;
+	margin-left: 20%;
+	margin-top: 5%;
+	color: #ADE28A;
+  }
+  
+  .maisQmSomos{
+	grid-column: 2/4;
+	grid-row: 1;
+	margin-left: 10%;
+	width: 87%;
+	height: 85%;
+	position: relative; /* Remove absolute positioning */
+	border-radius: 20px;
+	overflow: hidden;
+	opacity: 0;
+	animation: fadeIn 2s ease-in-out forwards;
+	background-color: #256670;
+	border-radius: 20px;
+  }
+
+  .umProblema{
+	margin-top: 4%;
+	margin-left: 10%;
+  }
+
+  .divisaoInfo{
+	grid-column: 1/3;
+	grid-row: 2;
+	position: absolute;
+	background-color: #9ACD32;
+	width: 101.8%;
+	height: 8%;
+	margin-left: -3%;
+	margin-top: 32%;
+  }
+
+  #alagamentoCidade{
+	margin-top: 10%;
+	
+	grid-row: 3;
+	grid-column: 1/1;
+	border-radius: 3%;
+	width: 100%;
+  }
+
+  #alagamento2{
+	margin-top: 10%;
+	
+	grid-row: 3;
+	grid-column: 2/3;
+	border-radius: 3%;
+	width: 100%;
+  }
+  #alagamento3{
+	margin-top: 10%;
+	
+	grid-row: 3;
+	grid-column: 3/3;
+	border-radius: 3%;
+	width: 92%;
+  }
+
+  .continuacao{
+	margin-top: 45%;
+	margin-bottom: 50%;
+	grid-column: 1/3;
+	grid-row: 3;
+	width: 60%;
+	height: 45%;
+	position: relative; /* Remove absolute positioning */
+	border-radius: 20px;
+	overflow: hidden;
+	opacity: 0;
+	animation: fadeIn 2s ease-in-out forwards;
+	background-color: #256670;
+	border-radius: 20px;
+  }
+
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	  animation-duration: 0.001s;
+	}
+  }
+  
