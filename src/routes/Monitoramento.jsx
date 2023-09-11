@@ -1,17 +1,14 @@
 import Cabecalho from '../components/cabecalho'
-import './Home.css'
+import './Monitoramento.css'
 import ContainerHome from '../components/componentesPesonalizados/homeContainer'
 import Rodape from '../components/rodape'
 
-export default function Home() {
+
+export default function Monitoramento() {
 
   return (
     <>
-    <div id="grid-container">
-        <div id="grid-item2">
-        <ContainerHome/>
-        </div>
-      </div>
+        <h1>Hello world</h1>
     </>
   )
 }

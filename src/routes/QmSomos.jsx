@@ -1,13 +1,13 @@
 import Cabecalho from "../components/cabecalho";
 import Rodape from "../components/rodape";
 import logoImage from '../img/logo.png'
+import './QmSomos.css'
 
 export default function QuemSomos(){
     return(
         <>
-        <Cabecalho/>
         <div id="body">
-        <div class="container">
+        <div className="container">
             <h2>Quem somos?</h2>
             <p class="txtPadr">Somos a empresa <txt class="dC">Dream Clean</txt>, nosso foco é manter a cidade mais limpa
             fornecendo sistemas de bueiros inteligentes com o foco de diminuir 
@@ -16,7 +16,6 @@ export default function QuemSomos(){
                 <img src={logoImage} alt="logo"/> 
         </div>
         </div>
-        <Rodape />
         </>
     )
 }
