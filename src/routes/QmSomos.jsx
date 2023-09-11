@@ -38,8 +38,21 @@ export default function QuemSomos(){
         <img id="alagamento2" src={Alagamento2} alt="Alagamento em sp" />
         <img id="alagamento3" src={Alagamento3} alt="Alagamento em sp" />
 
-        <div className="continuacao"></div>
-        <div className="continuacao2"></div>
+        <div className="continuacao">
+        <p className="txtPadr">Somos a empresa <txt className="dC">Dream Clean</txt>, nosso foco é manter a cidade mais limpa
+            fornecendo sistemas de bueiros inteligentes com o foco de diminuir 
+                as enchentes nas grandes metropoles, tornando as cidades mais limpas e fornecendo uma vida
+                melhor e mais saudável para todos.</p>
+        </div>
+        <div className="continuacao2">
+            <p className="txtPadr2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Vitae quaerat beatae obcaecati blanditiis itaque quod 
+                 repellat voluptatibus quis possimus nobis, ab dolore 
+                 eveniet exercitationem sequi sed! Dicta explicabo amet 
+                 assumenda.
+            </p>
+        </div>
         </div>
         </>
     )
