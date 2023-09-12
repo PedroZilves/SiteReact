@@ -11,11 +11,13 @@ export default function App() {
       <div className="menu">
         <Cabecalho />
       </div>
+      <div className="corpo">
       <div className="content">
         <Outlet />
       </div>
       <div className="rodape">
         <Rodape />
+      </div>
       </div>
     </div>
   );

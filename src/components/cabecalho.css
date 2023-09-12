@@ -1,3 +1,4 @@
+/* Definindo variáveis CSS */
 :root {
   --menu-background-color: #1E425E;
   --menu-logo-width: 110px;
@@ -9,6 +10,7 @@
   --menu-link-font-weight: bold;
 }
 
+/* Estilizando o menu */
 .menu {
   background-color: var(--menu-background-color);
   position: fixed;
@@ -22,6 +24,7 @@
   background-position: var(--menu-logo-position);
 }
 
+/* Estilizando a lista não ordenada (ul) */
 ul {
   list-style: none;
   display: flex;
@@ -32,25 +35,30 @@ ul {
   padding: 0;
 }
 
+/* Estilizando os itens da lista (li) */
 li {
   margin-right: var(--menu-item-margin);
   margin-left: var(--menu-item-margin);
 }
 
+/* Estilizando os links (a) */
 a {
   color: var(--menu-link-color);
   text-decoration: none;
 }
 
+/* Estilizando o elemento com id 'cliAq' */
 #cliAq {
   color: var(--menu-cliAq-color);
   font-weight: var(--menu-link-font-weight);
 }
 
+/* Estilizando os links quando o mouse passa por cima (hover) */
 a:hover {
   color: var(--menu-link-hover-color);
 }
 
+/* Estilizando os links visitados */
 a:visited {
   color: var(--menu-link-color);
 }

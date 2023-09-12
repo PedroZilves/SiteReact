@@ -1,26 +1,39 @@
 .app-container {
     display: grid;
-    grid-template-rows: auto 1fr auto; /* Cria três áreas, uma para o cabeçalho, uma para o conteúdo e uma para o rodapé */
-    height: 100vh; /* Alterado para 'height' em vez de 'min-height' para ocupar 100% da tela */
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
   }
   
   .menu {
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .corpo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: none;
   }
   
   .content {
+    grid-row: 1;
+    grid-column: 1/4;
     position: relative;
     z-index: 2;
     /* Adicione seu estilo de conteúdo aqui */
   }
   
   .rodape {
+    text-align: center;
     position: relative;
+    grid-row: 3;
+    grid-column: 1/4;
     z-index: 2;
     width: 100%;
     gap: 0;
   }
+
+ 
   
   .menu {
     position: absolute; /* Define a posição como fixa */

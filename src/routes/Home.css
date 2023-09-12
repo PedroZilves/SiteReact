@@ -1,15 +1,18 @@
+/* Definindo variáveis CSS */
 :root {
   --background-color: #ADE28A;
   --font-family: sans-serif, Roboto;
   --grid-gap: 10px;
 }
 
+/* Reset de estilos para todos os elementos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilizando o corpo (body) */
 body {
   background-color: var(--background-color);
   font-family: var(--font-family);
@@ -17,6 +20,7 @@ body {
   margin: 0;
 }
 
+/* Estilizando o contêiner da grade (grid-container) */
 #grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Agora são apenas 2 colunas */
@@ -26,22 +30,8 @@ body {
   max-width: 100%;
 }
 
-/* Remova as bordas dos elementos dentro do grid */
-#grid-item1,
-#grid-item2,
-.rodape {
+/* Estilizando o segundo item da grade (grid-item2) */
+#grid-item2 {
   border: none;
-}
-
-.rodape {
-  grid-row: 3; /* Coloque o rodapé na terceira linha do grid */
-  grid-column: 1 / -1; /* Estenda o rodapé por todas as colunas */
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  width: 100%; /* Certifique-se de que o rodapé ocupe toda a largura */
-  position: fixed; /* Fixe o rodapé na parte inferior da tela */
-  bottom: 0; /* Alinhe o rodapé na parte inferior */
-  left: 0;
+  margin-top: 100%;
 }
