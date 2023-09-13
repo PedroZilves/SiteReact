@@ -24,6 +24,7 @@
   }
   
   .rodape {
+    margin-bottom: -23vh;
     text-align: center;
     position: relative;
     grid-row: 3;

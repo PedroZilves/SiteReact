@@ -28,6 +28,7 @@ body {
   grid-gap: var(--grid-gap);
   width: 100%;
   max-width: 100%;
+  margin-bottom: -20vh;
 }
 
 /* Estilizando o segundo item da grade (grid-item2) */

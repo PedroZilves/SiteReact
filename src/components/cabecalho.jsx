@@ -14,7 +14,7 @@ export default function Cabecalho(){
      <li><a href="#">Projeto</a></li> 
      <li><a href="#">Como o lixo é descartado</a></li>
      <li><a href="#">Contato</a></li>
-     <li><a href="#">Login</a></li>
+     <li><Link to='/Login'>Login</Link></li>
      
     </ul>
  </div>

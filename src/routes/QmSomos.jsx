@@ -31,7 +31,7 @@ export default function QuemSomos(){
         </div>
         <div className="divisaoInfo">
                 <p className="txtPadr3">
-                    Abaixo veja o resutado desde problema:
+                    A seguir, observe o resultado deste problema:
                 </p>
             </div>
         <img id="alagamentoCidade" src={Alagamento} alt="Alagamento em metropole" />
