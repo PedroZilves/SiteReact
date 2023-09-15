@@ -20,3 +20,9 @@
   color: var(--cor-texto);         /* Utilizando a variável de cor de texto */
   margin: var(--espacamento-texto) 0; /* Utilizando a variável de espaçamento entre parágrafos e 0 na margem vertical para evitar espaçamento extra */
 }
+
+@media screen and (max-width:1024px){
+  .rodape{
+    margin-top: 200px;
+  }
+}

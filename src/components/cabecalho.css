@@ -10,8 +10,20 @@
   --menu-link-font-weight: bold;
 }
 
+.menu-btn{
+  display: none;
+}
+
+.bar{
+  width: 25px;
+  height: 3px;
+  background-color: #FFF;
+  margin: 3px 0;
+}
+
 /* Estilizando o menu */
 .menu {
+  display: flex;
   background-color: var(--menu-background-color);
   position: fixed;
   top: 0;
@@ -24,6 +36,11 @@
   background-position: var(--menu-logo-position);
 }
 
+.itens {
+  list-style: none;
+  display: flex;
+}
+
 /* Estilizando a lista não ordenada (ul) */
 ul {
   list-style: none;
@@ -33,6 +50,7 @@ ul {
   height: 100%;
   margin: 0;
   padding: 0;
+  margin-left: 200px;
 }
 
 /* Estilizando os itens da lista (li) */
@@ -61,4 +79,45 @@ a:hover {
 /* Estilizando os links visitados */
 a:visited {
   color: var(--menu-link-color);
+}
+
+@media screen and (max-width:1024px){
+  .menu{
+    font-size: 0.95em;
+  }
+  
+  ul {
+    align-items: right;
+    justify-content: right;
+  }
+}
+
+@media screen and (max-width: 768px){
+    .menu-btn {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      margin-left: 84%;
+      align-items: center;
+      margin-top: 25px
+    }
+    .itens {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      align-items: right;
+      justify-content: right;
+      top: 50px;
+      right: 0;
+      width: 30%;
+      margin-top: 38px;
+      gap: 10px;
+      height: auto;
+      background-color: var(--menu-background-color);
+      z-index: 1;
+      border: 2px solid black;
+    }
+    .itens.active{
+      display: flex;
+    }
 }
