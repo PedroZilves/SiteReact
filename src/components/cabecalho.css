@@ -121,3 +121,9 @@ a:visited {
       display: flex;
     }
 }
+
+@media screen and (max-width: 500px){
+  .menu{
+    width: 115%;
+  }
+}
