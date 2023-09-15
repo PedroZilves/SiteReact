@@ -11,6 +11,7 @@ import Monitoramento from './routes/Monitoramento.jsx';
 import Login from './routes/Login.jsx';
 import App from './App.jsx';
 import Cadastro from './routes/Cadastro.jsx';
+import Projectarduino from './routes/Projectarduino.jsx';
 
 const router = createBrowserRouter([
   {path: "/", element: <App/>, errorElement: <Erro404/>,
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
       { path:"QmSomos", element:<QuemSomos /> },
       { path:"Monitoramento", element:<Monitoramento/> },
       { path: "Login", element:<Login/> },
-      { path: "Cadastro", element:<Cadastro/>}
+      { path: "Cadastro", element:<Cadastro/>},
+      { path: "Projectarduino", element:<Projectarduino/>}
     ]    
   }
 ]);
