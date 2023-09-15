@@ -25,18 +25,30 @@
   
   .rodape {
     margin-bottom: -23vh;
+    position: static;
     text-align: center;
-    position: relative;
-    grid-row: 3;
+    grid-row: 3/3;
     grid-column: 1/4;
     z-index: 2;
     width: 100%;
     gap: 0;
+    bottom: 0;
   }
 
- 
-  
-  .menu {
-    position: absolute; /* Define a posição como fixa */
+  @media screen and (max-width:1024px){
+    .rodape{
+      margin-top: 355px;
+    }
   }
-  
+
+  @media screen and (max-width:425px){
+    .rodape{
+      width: 134%;
+    }
+  }
+
+  @media screen and (max-width:320px){
+    .rodape{
+      width: 147%;
+    }
+  }

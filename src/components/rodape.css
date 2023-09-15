@@ -8,10 +8,16 @@
 
 /* Estilizando o rodapé */
 .rodape {
+  display: flex;
   background-color: var(--cor-de-fundo); /* Utilizando a variável de cor de fundo */
   color: var(--cor-texto);               /* Utilizando a variável de cor de texto */
   padding: 20px;
   text-align: center;
+  justify-content: center;
+  bottom: 0;
+  position: static;
+  left: 0;
+  margin-top: 150px;
 }
 
 /* Estilizando parágrafos dentro do rodapé */

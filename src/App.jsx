@@ -12,12 +12,12 @@ export default function App() {
         <Cabecalho />
       </div>
       <div className="corpo">
-      <div className="content">
-        <Outlet />
-      </div>
-      <div className="rodape">
-        <Rodape />
-      </div>
+        <div className="content">
+          <Outlet />
+        </div>
+        <div className="rodape">
+          <Rodape />
+        </div>
       </div>
     </div>
   );
