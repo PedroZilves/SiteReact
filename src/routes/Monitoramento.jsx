@@ -13,9 +13,9 @@ export default function Monitoramento() {
       <h1 id="monitoramento-titulo">Monitoramento de área</h1>
       <div className='container-imagens'>
       <p>Pontos de atenção de chuva forte</p>
-      <img className="image-monitor" id="img-mapa"src={mapa1} alt="mapa1"/> 
+      <img className="image-monitor" id="img-mapa1"src={mapa1} alt="mapa1"/> 
       <p>Bairros onde choveu em SP</p>
-      <img className="image-monitor" id="img-grafico" src={mapa2} alt="mapa2"/> 
+      <img className="image-monitor" id="img-mapa2" src={mapa2} alt="mapa2"/> 
     </div>
     </div>
     </>

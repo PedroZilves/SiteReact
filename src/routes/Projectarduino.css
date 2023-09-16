@@ -1,9 +1,47 @@
+.projetoPag{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 5%;
+    
+}
+
 .container-projeto{   
-    width: 600px;
-    height: 400px;
+    grid-row: 1;
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
     background-color: #256670;
     border-radius: 20px;
     margin-top: 10%;
     margin-bottom: 10%;
-    margin-left: 30%;
+    margin-left: 40%;
+    
 }
+.container-projeto h1{
+    color: #ADE28A;
+    text-align: justify;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5% ;
+}
+.container-projeto p{
+    color: white;
+    text-align: justify;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5% ;
+    font-size: 23px;
+}
+.image-projeto{
+    position: absolute;
+    border-radius: 4%;
+    grid-row: 1;
+    grid-column: 2/3;
+    margin-left: 50%;
+    margin-top: 3%;
+    width: 30%;
+    height: 70%;
+    
+}
+
